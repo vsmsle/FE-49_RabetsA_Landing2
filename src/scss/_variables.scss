@@ -1,0 +1,44 @@
+// color
+$deep_black: #000000;
+$black: #2d3033;
+$grey: #c6cbcd;
+$deep_grey: #6c7279;
+$white: #ffffff;
+$red: #e71414;
+$coral: #ff4343;
+$purple: #5c3249;
+$deep_blue: rgb(53, 60, 101);
+
+//FontSize
+$_64px: 4rem;
+$_36px: 2.25rem;
+$_30px: 1.875rem;
+$_24px: 1.5rem;
+$_18px: 1.125rem;
+$_13px: 0.8125rem;
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 685px;
+  }
+}
+@media (max-width: 566px) {
+  .container {
+    max-width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,58 @@
+@mixin title_h3 {
+    font-family: "Raleway";
+    font-size: $_24px;
+    font-weight: 900;
+    color: $black;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  @mixin link {
+    display: block;
+    width: 24rem;
+    line-height: 5rem;
+    background-color: $coral;
+    color: $white;
+    text-align: center;
+    margin: auto;
+    font-size: $_24px;
+    font-weight: 900;
+    text-transform: uppercase;
+  
+    &:hover {
+      background-color: $red;
+      transition: 0.2s;
+    }
+    &:active {
+      background-color: $coral;
+      box-shadow: 5px 5px 30px $coral;
+    }
+    @media (max-width: 767px) {
+      width: 19rem;
+      line-height: 3.8rem;
+    }
+    @media (max-width: 566px) {
+      font-size: 16px;
+      font-weight: 700;
+      width: 14rem;
+      line-height: 3.5rem;
+    }
+    @media (max-width: 320px) {
+      font-size: 16px;
+      font-weight: 600;
+      width: 12rem;
+      line-height: 3rem;
+    }
+  }
+  
+  @mixin social_icon {
+    text-align: center;
+    padding: 6px 0;
+    color: $grey;
+    width: 2.43rem;
+    height: 2.43rem;
+    border: 2px solid $grey;
+  }
+  @mixin icon {
+    width: 6.25rem;
+    height: 6.25rem;
+  }

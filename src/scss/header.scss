@@ -1,0 +1,229 @@
+.header {
+    background-image: url(../img/bg_header.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 38px 0 120px;
+    position: relative;
+    z-index: 100;
+  
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: rgba(37, 43, 73, 0.8);
+      width: 100%;
+      height: 100%;
+      display: block;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+  }
+  .header__container {
+    position: relative;
+    z-index: 100;
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: auto;
+  }
+  
+  .navigation__wrap {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid rgba(186, 187, 197, 0.3);
+    margin: 0 -15px;
+    margin-bottom: 130px;
+    width: 100%;
+    position: relative;
+  
+    @media (max-width: 767px) {
+      margin-bottom: 80px;
+    }
+  }
+  .header__logo {
+    width: 184px;
+    height: 26px;
+    margin: 0 15px;
+    position: relative;
+    z-index: 10;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    @media (max-width: 767px) {
+      margin: 15px 0 30px 40px;
+    }
+    @media (max-width: 566px) {
+      width: 150px;
+      height: 25px;
+    }
+    @media (max-width: 320px) {
+      width: 125px;
+      height: 22px;
+    }
+  }
+  
+  .header__navigation {
+    width: 670px;
+    margin: 0 15px;
+    position: relative;
+    z-index: 10;
+    top: 0;
+    transition: 0.3s;
+  
+    @media (max-width: 767px) {
+      position: absolute;
+      top: -550%;
+      left: 0;
+      width: 100%;
+      // height: 350px;
+      background-color: rgba(37, 43, 73, 1);
+      &.active {
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+  .navigation__list {
+    display: flex;
+    justify-content: space-between;
+  
+    @media (max-width: 767px) {
+      display: block;
+      padding: 30px 20px;
+    }
+  
+    &__item {
+      border-bottom: 3px solid transparent;
+      padding-bottom: 38px;
+      &:last-child {
+        @media (max-width: 767px) {
+          padding-bottom: 0;
+        }
+      }
+  
+      @media (max-width: 767px) {
+        border: none;
+      }
+  
+      & a {
+        padding: 0 25px;
+        color: $white;
+        font-size: $_13px;
+        font-weight: 700;
+        text-transform: uppercase;
+  
+        &:hover {
+          padding-bottom: 40px;
+          border-bottom: 3px solid $grey;
+          @media (max-width: 767px) {
+            border: none;
+          }
+        }
+        &:active {
+          padding-bottom: 40px;
+          color: $red;
+          border-bottom: 3px solid $red;
+          @media (max-width: 767px) {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+  
+  .main-title {
+    color: $white;
+    font-size: $_64px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto 30px;
+    width: 90%;
+    @media (max-width: 767px) {
+      font-size: 55px;
+    }
+    @media (max-width: 566px) {
+      font-size: 42px;
+    }
+    @media (max-width: 320px) {
+      font-size: $_30px;
+    }
+  }
+  
+  .header-discription {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 80px;
+    & p {
+      color: $white;
+      font-size: $_24px;
+      font-weight: 400;
+      text-align: center;
+  
+      @media (max-width: 767px) {
+        font-size: 20px;
+      }
+      @media (max-width: 566px) {
+        font-size: 16px;
+      }
+      @media (max-width: 320px) {
+        display: none;
+      }
+    }
+  }
+  
+  .header-link {
+    @include link;
+  }
+  
+  .header__burger {
+    display: none;
+    position: relative;
+    z-index: 20;
+    @media (max-width: 767px) {
+      display: block;
+      width: 30px;
+      height: 20px;
+      margin: 20px;
+    }
+  }
+  .header__burger:before,
+  .header__burger:after {
+    content: "";
+    background-color: $white;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    z-index: 100;
+    transition: 0.3s;
+  }
+  .header__burger:before {
+    top: 0;
+  }
+  .header__burger:after {
+    bottom: 0;
+  }
+  .header__burger span {
+    position: absolute;
+    background-color: $white;
+    width: 100%;
+    left: 0;
+    height: 2px;
+    top: 9px;
+    transition: 0.3s;
+  }
+  
+  .header__burger.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header__burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  .header__burger.active span {
+    transform: scale(0);
+  }
+  
