@@ -117,7 +117,7 @@
         &:hover {
           padding-bottom: 40px;
           border-bottom: 3px solid $grey;
-          transition: 0.5s;
+          // transition: 0.5s;
           @media (max-width: 767px) {
             border: none;
           }
