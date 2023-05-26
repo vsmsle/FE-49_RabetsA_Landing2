@@ -1,0 +1,41 @@
+.footer {
+    background-color: rgba(44, 49, 84, 1);
+    padding: $_24px 0;
+    position: relative;
+    z-index: 10;
+  
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: rgba(37, 43, 73, 0.8);
+      width: 100%;
+      height: 100%;
+      display: block;
+      top: 0;
+      left: 0;
+      z-index: 20;
+    }
+  }
+  .footer__wrap {
+    width: 23.125rem;
+    margin: auto;
+    text-align: center;
+    @media (max-width: 566px) {
+      width: 80%;
+    }
+  }
+  .footer__text {
+    font-size: $_18px;
+    font-weight: 400;
+    color: rgb(165, 165, 165);
+    text-transform: capitalize;
+    @media (max-width: 566px) {
+      width: 80%;
+    }
+  }
+  .footer__text__white {
+    font-size: $_18px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+  }

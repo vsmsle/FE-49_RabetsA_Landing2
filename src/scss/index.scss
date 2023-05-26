@@ -3,6 +3,10 @@
 @import "../scss/_mixins";
 @import "../scss/header";
 @import "../scss/features";
+@import "../scss/work";
+@import "../scss/footer";
+@import "../scss/download";
+@import "../scss/contact";
 
 *{
   box-sizing: border-box;
@@ -25,3 +29,4 @@ html {
   margin: auto;
   position: relative;
 }
+

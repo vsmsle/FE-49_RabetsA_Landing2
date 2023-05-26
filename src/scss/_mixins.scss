@@ -6,6 +6,32 @@
     text-transform: uppercase;
     text-align: center;
   }
+
+  @mixin header_h3 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: $_30px;
+    line-height: 1.166667;
+  }
+
+  @mixin header_h4 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: $_24px;
+    line-height: 1.166667;
+  }
+  
+
+  @mixin header_h5 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: $_18px;
+    line-height: 1.166667;
+  }
+
   @mixin link {
     display: block;
     width: 24rem;
@@ -20,7 +46,7 @@
   
     &:hover {
       background-color: $red;
-      transition: 0.2s;
+      transition: 0.5s;
     }
     &:active {
       background-color: $coral;
@@ -56,3 +82,5 @@
     width: 6.25rem;
     height: 6.25rem;
   }
+  
+  
