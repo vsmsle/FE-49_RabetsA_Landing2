@@ -36,7 +36,7 @@
     width: 100%;
     position: relative;
   
-    @media (max-width: 767px) {
+    @media (max-width: 890px) {
       margin-bottom: 80px;
     }
   }
@@ -50,7 +50,7 @@
       width: 100%;
       height: 100%;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 890px) {
       margin: 15px 0 30px 40px;
     }
     @media (max-width: 566px) {
@@ -71,7 +71,7 @@
     top: 0;
     transition: 0.3s;
   
-    @media (max-width: 767px) {
+    @media (max-width: 890px) {
       position: absolute;
       top: -550%;
       left: 0;
@@ -88,7 +88,7 @@
     display: flex;
     justify-content: space-between;
   
-    @media (max-width: 767px) {
+    @media (max-width: 890px) {
       display: block;
       padding: 30px 20px;
     }
@@ -97,12 +97,12 @@
       border-bottom: 3px solid transparent;
       padding-bottom: 38px;
       &:last-child {
-        @media (max-width: 767px) {
+        @media (max-width: 890px) {
           padding-bottom: 0;
         }
       }
   
-      @media (max-width: 767px) {
+      @media (max-width: 890px) {
         border: none;
       }
   
@@ -118,7 +118,7 @@
           padding-bottom: 40px;
           border-bottom: 3px solid $grey;
           // transition: 0.5s;
-          @media (max-width: 767px) {
+          @media (max-width: 890px) {
             border: none;
           }
         }
@@ -127,7 +127,7 @@
           color: $red;
           border-bottom: 3px solid $red;
           transition: 0.5s;
-          @media (max-width: 767px) {
+          @media (max-width: 890px) {
             border: none;
           }
         }
@@ -143,7 +143,7 @@
     text-align: center;
     margin: 0 auto 30px;
     width: 90%;
-    @media (max-width: 767px) {
+    @media (max-width: 890px) {
       font-size: 55px;
     }
     @media (max-width: 566px) {
@@ -164,7 +164,7 @@
       font-weight: 400;
       text-align: center;
   
-      @media (max-width: 767px) {
+      @media (max-width: 890px) {
         font-size: 20px;
       }
       @media (max-width: 566px) {
@@ -184,7 +184,7 @@
     display: none;
     position: relative;
     z-index: 20;
-    @media (max-width: 767px) {
+    @media (max-width: 890px) {
       display: block;
       width: 30px;
       height: 20px;
