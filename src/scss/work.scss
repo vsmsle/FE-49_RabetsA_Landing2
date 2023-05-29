@@ -10,10 +10,9 @@
     position: relative;
     border: 1px solid $white;
    
-    @media (max-width: 767px) {
-        width: 19rem;
-        line-height: 3.8rem;
- }
+    @media (max-width: 768px) {  
+      width: 50%;
+  }
 }
 
 .work__item-img {

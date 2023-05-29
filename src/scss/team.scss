@@ -133,21 +133,22 @@
   .fa-facebook-f__team {
     &:hover {
       color: rgba(63, 63, 204, 1);
-      transition: 0.2s;
+      transition: 0.3s;
+      // transform: scale(2);
     }
   }
   
   .fa-twitter__team {
     &:hover {
       color: rgba(20, 188, 255, 1);
-      transition: 0.2s;
+      transition: 0.3s;
     }
   }
   
   .fa-linkedin__team {
     &:hover {
       color: rgba(21, 102, 163, 1);
-      transition: 0.2s;
+      transition: 0.3s;
     
     }
   }
